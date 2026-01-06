@@ -29,7 +29,7 @@ export default function Hero() {
             Reviving traditional recipes with organic ingredients. A perfect blend of health and taste in every jar.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <Link href="/contact" className={cn(buttonVariants({ size: "lg" }), "bg-secondary hover:bg-secondary/90 text-secondary-foreground font-sans text-lg h-12 px-8 cursor-pointer")}>
+            <Link className={cn(buttonVariants({ size: "lg" }), "bg-secondary hover:bg-secondary/90 text-secondary-foreground font-sans text-lg h-12 px-8 cursor-pointer")} onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}>
                 Order Now
             </Link>
             <Button variant="outline" size="lg" className="bg-white/10 border-white text-white hover:bg-white/20 hover:text-white font-sans text-lg h-12 px-8" onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}>

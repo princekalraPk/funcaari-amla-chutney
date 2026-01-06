@@ -56,7 +56,7 @@ export default function EnquireModal({ product, trigger }: EnquireModalProps) {
       "service_cragrs2",
       "template_8tmvzza",
       {
-        to_email: values.email, // 👈 or another email
+        to_email: "funcaari.orders@gmail.com", // 👈 or another email
         product: product.name,
         quantity: values.quantity,
         name: values.name,
